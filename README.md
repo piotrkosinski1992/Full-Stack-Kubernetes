@@ -1,13 +1,10 @@
-https://nirajsonawane.github.io/2020/04/25/Deploy-React-Spring-Boot-MongoDB-Fullstack-application-on-Kubernetes/
-
-
 # Push backend to dockerhub
 mvn clean install - maven plugin does the trick
 
 # Push frontend to dockerhub
-npm install
-delete package-lock.json
-docker build --tag piotrek1992/student-app-client:1.0 .
+- npm install
+- delete package-lock.json
+- docker build --tag piotrek1992/student-app-client:1.0 .
 
 # Run backend locally
 run docker-compose file from docker directory
@@ -52,3 +49,6 @@ kubectl exec -it mysql-5b95957449-ss7pq -- mysql -u test123 -h mysql test -p
 Add CI/CD
 Fix issue with mysql credentials
 Create two microservices on separate PODs
+
+
+Credits https://nirajsonawane.github.io/2020/04/25/Deploy-React-Spring-Boot-MongoDB-Fullstack-application-on-Kubernetes/
